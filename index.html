@@ -127,7 +127,7 @@
 
         <!-- Hero -->
 
-        <section class="hero">
+        <section class="hero" id="dashboard">
 
             <div>
 
@@ -155,7 +155,7 @@
 
                 <h3>Today's Tasks</h3>
 
-                <h2>08</h2>
+                <h2 id="todayTasks">0</h2>
 
             </div>
 
@@ -163,7 +163,7 @@
 
                 <h3>Completed</h3>
 
-                <h2>05</h2>
+                <h2 id="completedTasks">0</h2>
 
             </div>
 
@@ -171,17 +171,27 @@
 
                 <h3>Productivity</h3>
 
-                <h2>85%</h2>
+                <h2 id="productivity">0%</h2>
 
             </div>
 
             <div class="card">
 
-                <h3>Focus Time</h3>
+    <h3>Focus Timer</h3>
 
-                <h2>4h 20m</h2>
+    <h2 id="focusTime">25:00</h2>
 
-            </div>
+    <div class="focus-buttons">
+
+        <button onclick="startTimer()">▶️</button>
+
+        <button onclick="pauseTimer()">⏸</button>
+
+        <button onclick="resetTimer()">🔄</button>
+
+    </div>
+
+</div>
 
         </section>
         <!-- Widgets -->
@@ -190,7 +200,7 @@
 
     <!-- Weather -->
 
-    <div class="widget weather-card">
+    <div class="widget weather-card" id="weather">
 
         <h2>🌤 Weather</h2>
 
@@ -208,7 +218,7 @@
 
     <!-- Calendar -->
 
-    <div class="widget calendar-card">
+    <div class="widget calendar-card" id="calendar">
 
         <h2>📅 Calendar</h2>
 
@@ -218,7 +228,7 @@
 
     <!-- Todo -->
 
-    <div class="widget todo-card">
+    <div class="widget todo-card" id="tasks">
 
         <h2>✅ To-Do List</h2>
 
@@ -243,7 +253,7 @@
 
     <!-- Notes -->
 
-    <div class="widget notes-card">
+    <div class="widget notes-card" id="notes-section">
 
         <h2>📝 Quick Notes</h2>
 
@@ -272,6 +282,7 @@
 <script src="js/weather.js"></script>
 <script src="js/todo.js"></script>
 <script src="js/theme.js"></script>
+<script src="js/timer.js"></script>
 
 </body>
 </html>
