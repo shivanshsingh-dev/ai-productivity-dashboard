@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Modern AI Productivity Dashboard built using HTML, CSS and JavaScript."> 
+    <title>AI Productivity Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons/favicon.png">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">🧠</div>
+
+            <div class="logo-text">
+
+                <h2>NeuroDesk</h2>
+
+                <p>AI Productivity</p>
+
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+    <li class="active" id="nav-dashboard">
+        <span>🏠</span>
+        Dashboard
+    </li>
+
+    <li id="nav-tasks">
+        <span>✅</span>
+        Tasks
+    </li>
+
+    <li id="nav-weather">
+        <span>🌤️</span>
+        Weather
+    </li>
+
+    <li id="nav-calendar">
+        <span>📅</span>
+        Calendar
+    </li>
+
+    <li id="nav-notes">
+        <span>📝</span>
+        Notes
+    </li>
+
+    <li id="nav-settings">
+        <span>⚙️</span>
+        Settings
+    </li>
+
+</ul>
+
+        <div class="sidebar-footer">
+
+            <h4>Version 1.0</h4>
+
+            <p>Made with ❤️</p>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main">
+
+        <!-- Navbar -->
+
+        <nav class="navbar">
+
+            <div class="search-box">
+
+                <input
+                 id="searchInput"
+                 type="text"
+                 placeholder="Search anything...">
+
+            </div>
+
+            <div class="nav-right">
+
+                <div class="clock"
+                id="clock">
+
+                    00:00
+
+                </div>
+
+                <button id="themeBtn">
+
+                    🌙
+
+                </button>
+
+                <div class="profile">
+
+                    👤 Shivansh
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <div>
+
+                <h1>
+
+                    Welcome Back 👋
+
+                </h1>
+
+                <p>
+
+                    Stay productive and keep everything organized.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Today's Tasks</h3>
+
+                <h2>08</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <h2>05</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Productivity</h3>
+
+                <h2>85%</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Focus Time</h3>
+
+                <h2>4h 20m</h2>
+
+            </div>
+
+        </section>
+        <!-- Widgets -->
+
+<section class="widgets">
+
+    <!-- Weather -->
+
+    <div class="widget weather-card">
+
+        <h2>🌤 Weather</h2>
+
+        <h3 id="city">Loading...</h3>
+
+        <h1 id="temp">--°C</h1>
+
+        <p id="condition">Loading weather...</p>
+
+        <p id="humidity">Humidity: --%</p>
+
+        <p id="wind">Wind: -- km/h</p>
+
+    </div>
+
+    <!-- Calendar -->
+
+    <div class="widget calendar-card">
+
+        <h2>📅 Calendar</h2>
+
+        <h3 id="date"></h3>
+
+    </div>
+
+    <!-- Todo -->
+
+    <div class="widget todo-card">
+
+        <h2>✅ To-Do List</h2>
+
+        <div class="todo-input">
+
+            <input
+                id="taskInput"
+                type="text"
+                placeholder="Add a task">
+
+            <button onclick="addTask()">
+
+                Add
+
+            </button>
+
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <!-- Notes -->
+
+    <div class="widget notes-card">
+
+        <h2>📝 Quick Notes</h2>
+
+        <textarea
+            id="notes"
+            placeholder="Write something..."></textarea>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <p>
+        © 2026 NeuroDesk • Built with HTML, CSS & JavaScript
+    </p>
+
+</footer>
+
+</main>
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>
