@@ -272,6 +272,72 @@
     </p>
 
 </footer>
+<div id="settingsPanel" class="settings-panel">
+
+    <div class="settings-header">
+        <h2>⚙️ Settings</h2>
+
+        <button id="closeSettings">
+            ✖
+        </button>
+    </div>
+
+    <div class="setting-group">
+
+        <label>Weather City</label>
+
+        <input
+            id="cityInput"
+            type="text"
+            placeholder="Enter city">
+
+        <button id="saveCity">
+            Save City
+        </button>
+
+    </div>
+
+    <div class="setting-group">
+
+        <label>Focus Duration</label>
+
+        <select id="focusDuration">
+
+            <option value="15">15 Minutes</option>
+            <option value="25">25 Minutes</option>
+            <option value="45">45 Minutes</option>
+            <option value="60">60 Minutes</option>
+            <option value="90">90 Minutes</option>
+
+        </select>
+
+    </div>
+
+    <div class="setting-group">
+
+        <button id="clearTasks">
+            🗑 Clear All Tasks
+        </button>
+
+    </div>
+
+    <div class="setting-group">
+
+        <button id="clearCompleted">
+            ✅ Clear Completed
+        </button>
+
+    </div>
+
+    <div class="setting-group">
+
+        <button id="clearNotes">
+            📝 Clear Notes
+        </button>
+
+    </div>
+
+</div>
 
 </main>
 
@@ -283,6 +349,7 @@
 <script src="js/todo.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/timer.js"></script>
+<script src="js/settings.js"></script>
 
 </body>
 </html>
